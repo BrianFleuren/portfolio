@@ -1,0 +1,25 @@
+# ---------------------------------------------------------------
+# Deze repository is PUBLIEK. Alles wat hier niet wordt uitgesloten,
+# staat voor iedereen online.
+# ---------------------------------------------------------------
+
+# Ruw studiemateriaal (3,3 GB). Bevat o.a. het onbewerkte cv met
+# woonadres en geboortedatum, de getekende stagebeoordeling, de
+# begroting, notulen met namen van collega's en Revit-bestanden
+# boven de 100 MB. Mag nooit in deze repository.
+Bestanden/
+
+# Lokale instellingen van Claude Code (preview-server)
+.claude/
+
+# Niet gebruikt op de site
+assets/img/house-roofplan.jpg
+# Onbewerkte versie van de portretfoto, met een tweede persoon in beeld
+assets/img/portrait-alt.jpg
+
+# Systeembestanden
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+~$*

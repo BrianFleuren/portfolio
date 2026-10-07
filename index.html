@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brian Fleuren — Building Engineering Portfolio</title>
+<meta name="description" content="Portfolio of Brian Fleuren, third-year Building Engineering student at Avans University of Applied Sciences: site experience with a main contractor, BIM modelling in Revit, structural variant studies, building physics and construction detailing.">
+<meta name="author" content="Brian Fleuren">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Fleuren — Building Engineering Portfolio">
+<meta property="og:description" content="Third-year Building Engineering student at Avans. Four weeks on a hospital site with a main contractor, and design work from first sketch to construction detail.">
+<meta property="og:image" content="assets/img/hero-azc.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c2d3c'/%3E%3Ctext x='16' y='23' font-family='Arial Narrow,Arial,sans-serif' font-weight='bold' font-size='18' fill='%23f2f2f3' text-anchor='middle'%3EBF%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Software icons, drawn inline so nothing is fetched from a third party.
+     These are simplified recreations of each product's mark, used to label
+     the tools Brian works with — not official brand assets. -->
+<svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+  <symbol id="i-revit" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="5" fill="#0d5a8f"/>
+    <text x="12" y="12.6" text-anchor="middle" dominant-baseline="central"
+          font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#ffffff">R</text>
+  </symbol>
+  <symbol id="i-cad" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="5" fill="#4a5157"/>
+    <path d="M6 18 H18 L6 6 Z" fill="none" stroke="#ffffff" stroke-width="1.7" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="i-excel" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="5" fill="#1d6f42"/>
+    <text x="12" y="12.6" text-anchor="middle" dominant-baseline="central"
+          font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#ffffff">X</text>
+  </symbol>
+  <symbol id="i-ps" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="5" fill="#001e36"/>
+    <text x="12" y="12.6" text-anchor="middle" dominant-baseline="central"
+          font-family="Arial,Helvetica,sans-serif" font-size="10.5" font-weight="700" fill="#31a8ff">Ps</text>
+  </symbol>
+  <symbol id="i-ai" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="5" fill="#330000"/>
+    <text x="12" y="12.6" text-anchor="middle" dominant-baseline="central"
+          font-family="Arial,Helvetica,sans-serif" font-size="10.5" font-weight="700" fill="#ff9a00">Ai</text>
+  </symbol>
+  <symbol id="i-id" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="5" fill="#49021f"/>
+    <text x="12" y="12.6" text-anchor="middle" dominant-baseline="central"
+          font-family="Arial,Helvetica,sans-serif" font-size="10.5" font-weight="700" fill="#ff3366">Id</text>
+  </symbol>
+</svg>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="wordmark" href="#projects" data-goto="projects">
+      <span class="wordmark__mono" aria-hidden="true">BF</span>
+      <span class="wordmark__name">Brian Fleuren</span>
+      <span class="wordmark__role">Building Engineering · Avans</span>
+    </a>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button class="tab" role="tab" id="tab-projects" data-route="projects" aria-controls="panel-projects" aria-selected="true">Projects</button>
+      <button class="tab" role="tab" id="tab-about"    data-route="about"    aria-controls="panel-about"    aria-selected="false" tabindex="-1">About me</button>
+      <button class="tab" role="tab" id="tab-contact"  data-route="contact"  aria-controls="panel-contact"  aria-selected="false" tabindex="-1">Contact</button>
+    </nav>
+
+    <div class="langswitch" role="group" aria-label="Taal / Language">
+      <button class="langswitch__btn" type="button" data-lang-btn="nl" aria-pressed="true" lang="nl">NL</button>
+      <button class="langswitch__btn" type="button" data-lang-btn="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ==================== PROJECTS ==================== -->
+<section class="panel is-active" role="tabpanel" id="panel-projects" aria-labelledby="tab-projects" tabindex="0">
+
+  <section class="stage">
+    <div class="stage__media">
+      <img src="assets/img/hero-azc.jpg" width="2600" height="1509"
+           alt="Render of two three-storey timber-clad accommodation blocks at dusk.">
+    </div>
+    <div class="stage__scrim" aria-hidden="true"></div>
+    <div class="stage__inner">
+      <p class="eyebrow eyebrow--centred">Portfolio · 2025 — 2026</p>
+      <h1 class="stage__title">Where a design meets the way it gets built</h1>
+      <a class="btn btn--light" href="#contact" data-goto="contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="wrap intro__grid">
+      <figure class="intro__portrait reveal">
+        <div class="intro__frame">
+          <img src="assets/img/portrait-intro.jpg" width="1000" height="1249" loading="lazy"
+               alt="Portrait photograph of Brian Fleuren.">
+        </div>
+        <figcaption>Brian Fleuren · Wijchen, NL</figcaption>
+      </figure>
+
+      <div class="intro__body reveal">
+        <p class="eyebrow">Introduction</p>
+        <h2 class="intro__title">Building things came first. The engineering came after.</h2>
+        <p class="lede">
+          I am a third-year Building Engineering student at Avans University of Applied Sciences in
+          's-Hertogenbosch. I have been building and designing things for as long as I can remember;
+          these days that means variant studies, building-physics calculations and BIM models in Revit.
+        </p>
+        <p>
+          What holds my attention is the point where a drawing meets reality — the span direction that
+          decides which walls carry load, the duct run that has to be in the plan before it becomes a
+          problem, the detail that decides whether a facade actually works.
+        </p>
+        <p>
+          The three projects below cover the range: four weeks on a live hospital site with a main
+          contractor, an individual design taken down to detail level, and a large project run by a team.
+        </p>
+        <p class="hero__facts">
+          <span>Third year</span><span>Site experience</span><span>Revit &amp; BIM</span><span>Detailing</span><span>Wijchen, NL</span>
+        </p>
+        <div class="btnrow">
+          <a class="btn" href="#about" data-goto="about">More about me</a>
+          <a class="btn btn--ghost" href="assets/docs/CV-Brian-Fleuren.pdf" download="CV-Brian-Fleuren.pdf">Download CV (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats reveal">
+    <div class="stat"><span class="stat__num">3</span><p class="stat__cap">Projects</p></div>
+    <div class="stat"><span class="stat__num">4</span><p class="stat__cap">Weeks on site</p></div>
+    <div class="stat"><span class="stat__num">350</span><p class="stat__cap">Units planned</p></div>
+    <div class="stat"><span class="stat__num">2028</span><p class="stat__cap">Graduating</p></div>
+  </div>
+
+  <nav class="rail" aria-label="Projects">
+    <a class="rail__item" href="#p01">
+      <img src="assets/img/rail-01.jpg" width="1200" height="900" loading="lazy" alt="">
+      <span class="rail__cap"><b class="rail__no">#01</b><span>Rijnstate / Berghege</span></span>
+    </a>
+    <a class="rail__item" href="#p02">
+      <img src="assets/img/rail-02.jpg" width="1400" height="1421" loading="lazy" alt="">
+      <span class="rail__cap"><b class="rail__no">#02</b><span>Cube House</span></span>
+    </a>
+    <a class="rail__item" href="#p03">
+      <img src="assets/img/rail-03.jpg" width="1400" height="812" loading="lazy" alt="">
+      <span class="rail__cap"><b class="rail__no">#03</b><span>Temporary AZC</span></span>
+    </a>
+  </nav>
+
+  <!-- ---------- Project 01 · Berghege internship ---------- -->
+  <article class="project" id="p01">
+    <div class="wrap">
+      <p class="project__index"><b>Project 01</b> <span>Professional practice</span></p>
+      <h2 class="project__title">Rijnstate hospital: Radiology &amp; Nuclear Medicine</h2>
+      <p class="project__standfirst">
+        Four weeks on site in Arnhem with main contractor Bouwbedrijf Berghege, working alongside
+        the site manager on an extension built hard against a hospital that never closed for a day.
+      </p>
+    </div>
+
+    <section class="stage stage--band">
+      <div class="stage__media">
+        <img src="assets/img/berg-site.jpg" width="1900" height="1425" loading="lazy"
+             alt="The new hospital wing under construction: brick facade behind full scaffolding, with a mortar silo and site fencing in front.">
+      </div>
+      <div class="stage__scrim" aria-hidden="true"></div>
+      <div class="stage__inner reveal">
+        <p class="eyebrow eyebrow--centred">Arnhem · Summer 2025</p>
+        <h3 class="stage__title">Twenty-four columns on a four by six grid</h3>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <dl class="specs reveal">
+        <div class="spec"><dt>Project</dt><dd>Radiology &amp; Nuclear Medicine extension</dd></div>
+        <div class="spec"><dt>Location</dt><dd>Rijnstate hospital, Arnhem</dd></div>
+        <div class="spec"><dt>Contractor</dt><dd>Bouwbedrijf Berghege</dd></div>
+        <div class="spec"><dt>On site</dt><dd>10 June — 8 July 2025</dd></div>
+        <div class="spec"><dt>My role</dt><dd>Intern to the site manager</dd></div>
+        <div class="spec"><dt>Handover</dt><dd>January 2026</dd></div>
+      </dl>
+
+      <div class="cols reveal">
+        <div>
+          <h3>The building</h3>
+          <p>
+            A new wing on the north side of the hospital, holding outpatient rooms on the ground
+            floor and the Radiology and Nuclear Medicine department above, including two hybrid
+            operating theatres where imaging and surgery happen in the same room.
+          </p>
+          <p>
+            The frame is twenty-four concrete columns on a fixed four by six grid, with hollow-core
+            floors and a masonry cavity wall. Simple, until you look at what has to happen inside it.
+          </p>
+        </div>
+        <div>
+          <h3>Why it was hard</h3>
+          <p>
+            Everything had to be built against a hospital that stayed fully open. The accident and
+            emergency entrance sat directly opposite our scaffolding, so the site was shaped as much
+            by what the hospital needed as by what the building needed.
+          </p>
+          <p>
+            The rooms themselves are unforgiving too: scanners impose limits on vibration and on what
+            may come near them, and the theatre walls carry lead shielding that has to stay intact.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- construction spec, inverted -->
+    <section class="band">
+      <div class="wrap">
+        <div class="section__head section__head--num reveal">
+          <span class="section__num" aria-hidden="true">01</span>
+          <div class="section__head__body">
+            <p class="eyebrow">Construction</p>
+            <h3 class="section__title">What the extension is made of</h3>
+            <p class="section__sub">
+              A hybrid of stacked and assembled construction: masonry and calcium silicate on site,
+              prefabricated concrete over the openings.
+            </p>
+          </div>
+        </div>
+
+        <dl class="specs reveal">
+          <div class="spec"><dt>Frame</dt><dd>24 concrete columns, 4 × 6 grid</dd></div>
+          <div class="spec"><dt>Bays</dt><dd>7200 mm</dd></div>
+          <div class="spec"><dt>Floors</dt><dd>200 mm hollow core + 60 mm topping</dd></div>
+          <div class="spec"><dt>Cavity wall</dt><dd>100 brick · 80 cavity · 150 mineral wool · 150 calcium silicate</dd></div>
+          <div class="spec"><dt>Thermal</dt><dd>Rc ≥ 4.7 m²K/W</dd></div>
+          <div class="spec"><dt>Shielded walls</dt><dd>250 mm metal stud with 2 mm lead</dd></div>
+        </dl>
+
+        <div class="block figgrid figgrid--2 reveal">
+          <figure class="fig fig--zoom">
+            <div class="fig__frame">
+              <img src="assets/img/berg-elevation.jpg" width="1920" height="1640" loading="lazy"
+                   alt="North and east elevations of the hospital extension at 1:50, showing the brick facade, aluminium frames and the planted roof storey.">
+            </div>
+            <figcaption><b>Elevations</b> North and east elevations at 1:50 — brickwork, aluminium frames and the planted screen around the plant storey. Drawing by Croes Bouwtechnisch Ingenieursbureau for Berghege and Rijnstate.</figcaption>
+          </figure>
+          <figure class="fig fig--zoom">
+            <div class="fig__frame">
+              <img src="assets/img/berg-detail-book.jpg" width="1800" height="1273" loading="lazy"
+                   alt="Window sill detail at 1:5 from the project detail book, with the full cavity wall build-up annotated.">
+            </div>
+            <figcaption><b>Detail H08</b> Window sill at 1:5 from the project detail book. The radiation shielding does not sit in the glazing — it sits in the metal-stud wall behind, as lead sheet between layers of plasterboard.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap block">
+      <div class="section__head section__head--num reveal">
+        <span class="section__num" aria-hidden="true">02</span>
+        <div class="section__head__body">
+          <p class="eyebrow">Constraints</p>
+          <h3 class="section__title">Building against a hospital that stayed open</h3>
+          <p class="section__sub">
+            The site rules were written around the hospital, not around the build.
+          </p>
+        </div>
+      </div>
+
+      <ul class="targets reveal">
+        <li><b>01</b><span>The ambulance route kept clear at all times, without exception</span></li>
+        <li><b>02</b><span>Nothing ferrous brought inside the scanners' magnetic field line</span></li>
+        <li><b>03</b><span>Vibration kept below the limit the imaging equipment could tolerate</span></li>
+        <li><b>04</b><span>Noisy work held back until the wards were awake, with fixed transport routes so construction traffic never crossed hospital traffic</span></li>
+      </ul>
+
+      <div class="block figgrid figgrid--2 reveal">
+        <figure class="fig fig--zoom fig--photo">
+          <div class="fig__frame">
+            <img src="assets/img/berg-hospital.jpg" width="1900" height="1425" loading="lazy"
+                 alt="View down from the scaffolding over the site, with the hospital's accident and emergency entrance and parked ambulances directly opposite.">
+          </div>
+          <figcaption><b>The setting</b> From the scaffold, looking across the fenced work area straight at the accident and emergency entrance. Everything on the left is a building site; everything on the right is a hospital running normally.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom fig--photo">
+          <div class="fig__frame">
+            <img src="assets/img/berg-facade.jpg" width="1600" height="1200" loading="lazy"
+                 alt="The cavity wall part-built along the alley between the new wing and the existing hospital, with insulation still exposed.">
+          </div>
+          <figcaption><b>Facade</b> The cavity wall going up in the alley between the new wing and the existing building — outer leaf part-built, insulation still open.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="wrap block">
+      <div class="section__head section__head--num reveal">
+        <span class="section__num" aria-hidden="true">03</span>
+        <div class="section__head__body">
+          <p class="eyebrow">My contribution</p>
+          <h3 class="section__title">What I owned</h3>
+          <p class="section__sub">
+            Most days were hands-on. Three things, though, were mine to design rather than to carry.
+          </p>
+        </div>
+      </div>
+
+      <div class="cols reveal">
+        <div>
+          <h3>Work I designed</h3>
+          <ul class="didlist">
+            <li>Took the raw transcript of a work meeting and turned it into usable minutes: seven themed sections, a decision list, and an action table giving every item an owner and a deadline. I did the same for the meeting that followed.</li>
+            <li>Built my own weekly measurement schedule for the operating-theatre walls. Those walls are electrically isolated by design, and services were being drilled through them constantly — the schedule made it visible, week by week, which walls were still sound and which had stopped being sound.</li>
+            <li>Carried out a workplace safety inspection against the site's own checklist and wrote it up.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Work I carried out</h3>
+          <ul class="didlist">
+            <li>Setting out and plumbing masonry profiles so the brickwork would land on its gauge</li>
+            <li>Fixing vapour-tight membrane behind prefabricated panels, then drilling and resin-anchoring the brackets that carry them</li>
+            <li>Cutting service penetrations through the shielded walls and sleeving them</li>
+            <li>Building the timber support frame for an operating-theatre sliding door</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block figgrid figgrid--3 reveal">
+        <figure class="fig fig--zoom fig--photo">
+          <div class="fig__frame">
+            <img src="assets/img/berg-profiles.jpg" width="1200" height="1600" loading="lazy"
+                 alt="Masonry profiles set out and plumbed along the facade, with prefabricated brick lintels resting on stainless brackets.">
+          </div>
+          <figcaption><b>Profiles</b> Set out level and at the right spacing — get this wrong and the bricks do not fit.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom fig--photo">
+          <div class="fig__frame">
+            <img src="assets/img/berg-bracket.jpg" width="1200" height="1600" loading="lazy"
+                 alt="A stainless steel bracket bolted to the concrete floor edge, carrying a prefabricated concrete lintel, with black vapour-tight membrane dressed behind it.">
+          </div>
+          <figcaption><b>Bracket</b> Stainless bracket carrying a prefabricated lintel, with the vapour-tight membrane dressed in behind it.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom fig--photo">
+          <div class="fig__frame">
+            <img src="assets/img/berg-or-frame.jpg" width="1200" height="1600" loading="lazy"
+                 alt="A timber support frame built into a plasterboard wall opening for an operating-theatre sliding door.">
+          </div>
+          <figcaption><b>Openings</b> The timber frame we built to carry an operating-theatre sliding door.</figcaption>
+        </figure>
+      </div>
+
+      <div class="block figgrid figgrid--wide reveal">
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/berg-roof-detail.jpg" width="1500" height="2121" loading="lazy"
+                 alt="Hand-drawn roof edge detail at 1:5 with an aluminium roof trim, prefabricated concrete band, insulation and a sedum finish.">
+          </div>
+          <figcaption><b>My detail</b> Roof edge at 1:5, drawn in CAD afterwards at school. Aluminium trim, a prefabricated concrete band borrowed from a solution I met on site, 160 mm mineral wool with a 30 mm continuous layer, and a sedum finish — facade and roof both at Rc ≥ 4.7 m²K/W.</figcaption>
+        </figure>
+        <div>
+          <h3>Afterwards</h3>
+          <p>
+            Back at school I took the facade apart again and redesigned the roof edge myself, working
+            through two variants before settling on one where the roof bears fully on the load-bearing
+            wall. The prefabricated concrete band came straight from something I had watched go up in
+            Arnhem.
+          </p>
+          <figure class="fig fig--zoom" style="margin-top:1.6rem">
+            <div class="fig__frame">
+              <img src="assets/img/berg-sketch-wall.jpg" width="1030" height="945" loading="lazy"
+                   alt="Hand-drawn axonometric sketch of the cavity wall, annotated with the thickness of each layer.">
+            </div>
+            <figcaption><b>Sketch</b> Working the cavity wall out by hand: 100 brick, 80 cavity, 150 mineral wool, 150 calcium silicate.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <blockquote class="pull reveal">
+        <p>Four weeks of carrying, drilling and setting out taught me something no drawing had: my interest sits <em>before</em> the site exists — in the preparation, the planning and the estimate.</p>
+      </blockquote>
+    </div>
+  </article>
+
+  <!-- ---------- Project 02 · Cube House ---------- -->
+  <article class="project" id="p02">
+    <div class="wrap">
+      <p class="project__index"><b>Project 02</b> <span>Individual</span></p>
+      <h2 class="project__title">Cube House: from preliminary to final design</h2>
+      <p class="project__standfirst">
+        Module 1.3. A detached house with a cross-shaped floor plan, developed from preliminary
+        design (VO) all the way to final design (DO). Floor plan, elevations, section, load-bearing
+        structure, foundation and ventilation worked out entirely by me in Revit.
+      </p>
+    </div>
+
+    <div class="wrap project__hero reveal">
+      <figure class="fig fig--zoom">
+        <div class="fig__frame">
+          <img src="assets/img/house-overview.jpg" width="2200" height="1554" loading="lazy"
+               alt="A1 overview drawing of the cube house containing four elevations, the ground-floor plan, section A-A, a 3D view and a roof plan.">
+        </div>
+        <figcaption><b>Fig. 01</b> Overview drawing, A1 at 1:100. Ground-floor plan, four elevations, section A-A, 3D view and roof plan — built up entirely in Revit. Click to enlarge.</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <dl class="specs reveal">
+        <div class="spec"><dt>Module</dt><dd>1.3 — preliminary to final design</dd></div>
+        <div class="spec"><dt>Type</dt><dd>Individual project</dd></div>
+        <div class="spec"><dt>Brief</dt><dd>Detached house with studios and a workspace</dd></div>
+        <div class="spec"><dt>Dimensions</dt><dd>15.7 m wide · ridge height +5.57 m</dd></div>
+        <div class="spec"><dt>Software</dt><dd>Revit (BIM)</dd></div>
+        <div class="spec"><dt>Delivered</dt><dd>April 2025</dd></div>
+      </dl>
+
+      <div class="cols reveal">
+        <div>
+          <h3>The brief</h3>
+          <p>
+            The house is made up of four volumes rotated around a diagonal axis. That produces a
+            cross-shaped plan in which every wing takes on its own function: living, working,
+            guest accommodation and four studios.
+          </p>
+          <p>
+            The difficulty sat in that rotated main form. Every kink in the facade demands its own
+            answer in the load-bearing structure, the foundation and the detailing.
+          </p>
+        </div>
+        <div>
+          <h3>What I produced</h3>
+          <ul class="didlist">
+            <li>Ground-floor plan at 1:100</li>
+            <li>Four elevations and section A-A</li>
+            <li>3D model and visualisation in Revit</li>
+            <li>Principle details of facade and foundation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block figgrid figgrid--3 reveal">
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-plan.jpg" width="1070" height="1091" loading="lazy"
+                 alt="Ground-floor plan of the cube house with room numbers, areas and dimension lines.">
+          </div>
+          <figcaption><b>Fig. 02</b> Ground floor, 1:100. Four volumes rotated around a diagonal axis: living room, kitchen/dining, guest room, workspace and four studios.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-3d.jpg" width="640" height="410" loading="lazy"
+                 alt="3D view of the cube house showing the rotated brick volumes.">
+          </div>
+          <figcaption><b>Fig. 03</b> 3D view from the Revit model. The rotation of the volumes is what makes the massing — and what complicates the structure.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-section.jpg" width="900" height="494" loading="lazy"
+                 alt="Section A-A through the cube house with construction build-up annotations and level markers.">
+          </div>
+          <figcaption><b>Fig. 04</b> Section A-A, 1:100, with the build-up of roof, facade and floor and the level markers up to +5.57 m.</figcaption>
+        </figure>
+      </div>
+
+      <figure class="fig fig--zoom block reveal">
+        <div class="fig__frame">
+          <img src="assets/img/house-elevations.jpg" width="2200" height="387" loading="lazy"
+               alt="Four elevations of the cube house at scale 1:100: front, right side, rear and left side.">
+        </div>
+        <figcaption><b>Elevations</b> All four elevations at 1:100. Every kink in the plan shows up here as a change of plane in the facade.</figcaption>
+      </figure>
+    </div>
+
+    <!-- structure -->
+    <div class="wrap block">
+      <div class="section__head section__head--num reveal">
+        <span class="section__num" aria-hidden="true">01</span>
+        <div class="section__head__body">
+          <p class="eyebrow">Structure</p>
+          <h3 class="section__title">Load-bearing structure and foundation</h3>
+          <p class="section__sub">
+            Two variants for the span direction, tested against the rotated main form of the house.
+          </p>
+        </div>
+      </div>
+
+      <div class="figgrid figgrid--2 reveal">
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-span-ns.jpg" width="1287" height="1086" loading="lazy"
+                 alt="Hand-drawn floor plan with arrows indicating a north-south span direction.">
+          </div>
+          <figcaption><b>Variant 1</b> Span direction north–south. Short spans in the side wings, a longer span across the central section.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-span-ew.jpg" width="1286" height="1085" loading="lazy"
+                 alt="Hand-drawn floor plan with arrows indicating an east-west span direction.">
+          </div>
+          <figcaption><b>Variant 2</b> Span direction east–west. Same plan, rotated span. This changes which walls become load-bearing.</figcaption>
+        </figure>
+      </div>
+
+      <div class="block figgrid figgrid--wide reveal">
+        <div class="cols" style="display:block">
+          <h3>Why two variants</h3>
+          <p>
+            Rotating the span direction immediately changes which walls carry load and where the
+            foundation has to get heavier. I worked both variants out so that the choice could be
+            made on evidence rather than assumed.
+          </p>
+          <h3 style="margin-top:2rem">What I learned here</h3>
+          <p>
+            That a design decision taken at the front end — in this case rotating the volumes —
+            works its way through to structure and cost at the back end. The diagonal axis looks
+            good, but it produces extra kinks in the load-bearing structure and in the foundation.
+          </p>
+        </div>
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-foundation.jpg" width="1402" height="911" loading="lazy"
+                 alt="Hand-drawn foundation plan showing strip footings under the load-bearing walls and an insulated floor between them.">
+          </div>
+          <figcaption><b>Fig. 05</b> Floor with foundation. Strip foundations under the load-bearing walls, with an insulated PS floor between them.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- building physics -->
+    <div class="wrap block">
+      <div class="section__head section__head--num reveal">
+        <span class="section__num" aria-hidden="true">02</span>
+        <div class="section__head__body">
+          <p class="eyebrow">Building physics</p>
+          <h3 class="section__title">Ventilation concepts: system C and system D</h3>
+          <p class="section__sub">
+            Two ventilation principles worked out on the same floor plan, so that the consequences
+            for comfort, space and energy could be compared side by side.
+          </p>
+        </div>
+      </div>
+
+      <div class="compare reveal">
+        <div class="card">
+          <h4 class="card__title">System C</h4>
+          <p class="card__note">
+            Natural supply through vents in the facade, mechanical extract at the moisture-loaded
+            rooms. In the drawing, two vents were deliberately struck out because they sat on the
+            wrong facade.
+          </p>
+          <ul class="ledger">
+            <li>Simple and inexpensive</li>
+            <li>Needs little space for ducts</li>
+            <li class="is-con">No heat recovery</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4 class="card__title">System D</h4>
+          <p class="card__note">
+            Balanced ventilation: supply and extract both mechanical, with heat recovery. The duct
+            runs are drawn out across the whole house from the plant room.
+          </p>
+          <ul class="ledger">
+            <li>Heat recovery, so more energy efficient</li>
+            <li class="is-con">Needs space for ducts and a plant room</li>
+            <li class="is-con">Higher investment and more maintenance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="block figgrid figgrid--2 reveal">
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-vent-c.jpg" width="1275" height="1752" loading="lazy"
+                 alt="Floor plan marked up in blue and red for ventilation system C, with two facade vents crossed out.">
+          </div>
+          <figcaption><b>System C</b> Variant 1. Blue: natural supply through facade vents. Red: mechanical extract from the toilet, bathroom and kitchen.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-vent-d.jpg" width="1195" height="1752" loading="lazy"
+                 alt="Floor plan marked up in blue and red showing the duct layout for balanced ventilation system D.">
+          </div>
+          <figcaption><b>System D</b> Blue: mechanical supply ducts to the habitable rooms. Red: extract from the wet rooms back to the plant room.</figcaption>
+        </figure>
+      </div>
+
+      <p class="verdict reveal">
+        For this house, system D fits the energy requirements best — provided the duct routing is
+        taken into account in the design itself. That last point turned out to be the core of the
+        assignment.
+      </p>
+    </div>
+
+    <!-- details -->
+    <div class="wrap block">
+      <div class="section__head section__head--num reveal">
+        <span class="section__num" aria-hidden="true">03</span>
+        <div class="section__head__body">
+          <p class="eyebrow">Detailing</p>
+          <h3 class="section__title">Principle details at 1:5</h3>
+          <p class="section__sub">
+            Drawn by hand, layer by layer, so that every part of the build-up has to be accounted for.
+          </p>
+        </div>
+      </div>
+
+      <div class="figgrid figgrid--3 reveal">
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-detail-roof.jpg" width="862" height="1267" loading="lazy"
+                 alt="Hand-drawn roof edge detail at 1:5 with annotated layers from bitumen down to plasterboard.">
+          </div>
+          <figcaption><b>Detail A</b> Roof edge. Bitumen, waterproof membrane, XPS 040, vapour barrier, roof decking, timber joists and plasterboard.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-detail-foundation.jpg" width="935" height="1220" loading="lazy"
+                 alt="Hand-drawn foundation detail at 1:5 showing the strip footing, insulated floor and cavity wall build-up.">
+          </div>
+          <figcaption><b>Detail B</b> Foundation. Strip footing, insulated floor and the transition into the cavity wall.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/house-detail-window.jpg" width="1076" height="816" loading="lazy"
+                 alt="Hand-drawn window frame detail at 1:5 with dimensions and sealing annotations.">
+          </div>
+          <figcaption><b>Detail C</b> Window frame, detail 01. Brick, cavity, 30 mm insulation, 160 mm insulation between studs, plasterboard — with joint and seam sealing.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </article>
+
+  <!-- ---------- Project 02 ---------- -->
+  <article class="project" id="p03">
+    <div class="wrap">
+      <p class="project__index"><b>Project 03</b> <span>Group · 6 students</span></p>
+      <h2 class="project__title">Temporary asylum seekers' centre, Hoorn-West</h2>
+      <p class="project__standfirst">
+        A realisation plan for roughly 350 prefab housing units, commissioned by the COA (the Dutch
+        central agency for the reception of asylum seekers). Elective module Project Management,
+        with a team of six students from four different disciplines.
+      </p>
+    </div>
+
+    <div class="wrap project__hero reveal">
+      <figure class="fig fig--zoom fig--photo">
+        <div class="fig__frame">
+          <img src="assets/img/azc-front.jpg" width="2200" height="1277" loading="lazy"
+               alt="Render of two three-storey timber-clad accommodation blocks with bicycle shelters in front.">
+        </div>
+        <figcaption><b>Fig. 06</b> Three-storey stacked units in timber cladding, with bicycle parking along the access route. Rendered from our Revit model.</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <dl class="specs reveal">
+        <div class="spec"><dt>Client</dt><dd>COA</dd></div>
+        <div class="spec"><dt>Location</dt><dd>Genielaan 25A, Alphen aan den Rijn</dd></div>
+        <div class="spec"><dt>Scale</dt><dd>350 to 360 housing units</dd></div>
+        <div class="spec"><dt>Build time</dt><dd>12 months</dd></div>
+        <div class="spec"><dt>Team</dt><dd>6 students, 4 disciplines</dd></div>
+        <div class="spec"><dt>Delivered</dt><dd>October 2025</dd></div>
+      </dl>
+
+      <div class="cols reveal">
+        <div>
+          <h3>The brief</h3>
+          <p>
+            Deliver a temporary asylum seekers' centre within twelve months, built up from prefab
+            modular units. The units are produced in the factory while the foundation is laid on
+            site, so production runs parallel to the work on the building site.
+          </p>
+          <p>
+            Alongside the housing units, the plan covers sanitary facilities, communal living and
+            dining areas, offices for the COA and the layout of the outdoor space.
+          </p>
+        </div>
+        <div>
+          <h3>What we steered on</h3>
+          <ul class="targets">
+            <li><b>01</b><span>A maximum deviation of 2% against the budget</span></li>
+            <li><b>02</b><span>Zero accidents involving lost time</span></li>
+            <li><b>03</b><span>Quality in line with the Bbl, NEN standards and the COA's programme of requirements</span></li>
+            <li><b>04</b><span>Limiting nuisance through the BLVC plan</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap block">
+      <div class="section__head section__head--num reveal">
+        <span class="section__num" aria-hidden="true">01</span>
+        <div class="section__head__body">
+          <p class="eyebrow">My contribution</p>
+          <h3 class="section__title">The 3D model and the building-engineering input</h3>
+          <p class="section__sub">
+            In a team drawn from construction management, spatial development and civil engineering,
+            I was the building engineer. Working the units out in Revit therefore landed with me.
+          </p>
+        </div>
+      </div>
+
+      <div class="figgrid figgrid--wide reveal">
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/azc-unit-plan.jpg" width="1080" height="644" loading="lazy"
+                 alt="Dimensioned floor plan of one housing unit measuring 10.6 by 6.0 metres, with four beds, a shared living and dining area, kitchen and bathroom.">
+          </div>
+          <figcaption><b>Fig. 07</b> Floor plan of a single housing unit, 10.6 × 6.0 m: four beds, a shared living and dining area, kitchen and sanitary facilities. This drawing was used as the cover of the realisation plan.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/azc-section.jpg" width="853" height="912" loading="lazy"
+                 alt="Section through three stacked storeys of housing units showing floors, foundation and furnishing.">
+          </div>
+          <figcaption><b>Fig. 08</b> Section through three stacked storeys, with floor build-up and foundation.</figcaption>
+        </figure>
+      </div>
+
+      <div class="block cols reveal">
+        <div>
+          <h3>What I worked on</h3>
+          <ul class="didlist">
+            <li>The 3D model of the housing units in Revit, including plans and sections</li>
+            <li>The building-engineering development of the final design, together with two teammates</li>
+            <li>Thinking through working methods per construction phase: foundation, floors and placing the units</li>
+          </ul>
+        </div>
+        <div>
+          <h3>My role in the team</h3>
+          <p>
+            My fellow students came from other disciplines, so the building-engineering work fell to
+            me naturally. A teammate who was originally going to build the Revit model swapped that
+            task with me once it became clear it suited my background better.
+          </p>
+        </div>
+      </div>
+
+      <blockquote class="pull reveal">
+        <p>That swap turned out to be the right call: our 3D model was <em>noticeably more complete and more detailed</em> than those of most other groups.</p>
+      </blockquote>
+
+      <div class="block figgrid figgrid--2 reveal">
+        <figure class="fig fig--zoom fig--photo">
+          <div class="fig__frame">
+            <img src="assets/img/azc-courtyard.jpg" width="2200" height="1276" loading="lazy"
+                 alt="Render of the communal courtyard between the accommodation blocks, with a playground, benches and paths.">
+          </div>
+          <figcaption><b>Fig. 09</b> The communal outdoor space between the blocks: playground, seating and paths, with external stairs and galleries serving the upper floors.</figcaption>
+        </figure>
+        <figure class="fig fig--zoom fig--photo">
+          <div class="fig__frame">
+            <img src="assets/img/azc-gallery.jpg" width="2200" height="1277" loading="lazy"
+                 alt="Render of a gallery-access block with an external staircase and a fenced play area in front.">
+          </div>
+          <figcaption><b>Fig. 10</b> Gallery access along the facade. Stacking the units and serving them from an external gallery keeps the structure simple and demountable.</figcaption>
+        </figure>
+      </div>
+
+      <div class="block figgrid figgrid--wide reveal">
+        <figure class="fig fig--zoom">
+          <div class="fig__frame">
+            <img src="assets/img/azc-site-plan.jpg" width="577" height="337" loading="lazy"
+                 alt="Site layout plan showing construction phases, driving routes, site huts, waste containers and emergency assembly points.">
+          </div>
+          <figcaption><b>Fig. 11</b> Site layout from the BLVC plan: construction phases, driving routes, site huts, waste separation, first-aid points and emergency exits.</figcaption>
+        </figure>
+        <div>
+          <h3>What I took from it</h3>
+          <p>
+            I had to work remotely for part of the project. That is exactly when I noticed how much
+            a good communication plan is worth. It sounds like a formality, but in practice it is
+            the difference between a team that sits waiting for each other and a team that keeps
+            working. Agreeing clearly who picks up what — and writing it down — saved us a lot of time.
+          </p>
+          <p>
+            I also noticed that my own interest sits mainly with the design side. It was genuinely
+            useful to look at a building project once from the position of project manager and
+            supervisor, precisely because it shows what a design decision means further down the process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ---------- Other work ---------- -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Also on the drawing board</p>
+        <h2 class="section__title">Other project experience</h2>
+        <p class="section__sub">
+          Smaller assignments and one thing I built entirely off my own back.
+        </p>
+      </div>
+
+      <div class="minigrid reveal">
+        <article class="mini">
+          <p class="mini__kind">Project analysis</p>
+          <h3 class="mini__title">AVH Bouw — Kerkstraat</h3>
+          <p class="mini__body">A building-engineering analysis of a live construction project, focused on the structure and how it was actually executed on site.</p>
+        </article>
+        <article class="mini">
+          <p class="mini__kind">Sustainability assignment</p>
+          <h3 class="mini__title">Facade detail, my own house</h3>
+          <p class="mini__body">Independent research into the options for making an existing facade construction more sustainable, worked out as a detail.</p>
+        </article>
+        <article class="mini">
+          <p class="mini__kind">Own initiative</p>
+          <h3 class="mini__title">Revit automation</h3>
+          <p class="mini__body">Built my own integration (an MCP connection) to automate repetitive modelling work in Revit — because the fastest way to understand a tool is to take it apart.</p>
+        </article>
+      </div>
+
+      <div class="btnrow reveal">
+        <a class="btn" href="#contact" data-goto="contact">Get in touch</a>
+        <a class="btn btn--ghost" href="assets/docs/CV-Brian-Fleuren.pdf" download="CV-Brian-Fleuren.pdf">Download CV (PDF)</a>
+        <a class="btn btn--ghost" href="assets/docs/Portfolio-Brian-Fleuren.pdf" download>Download portfolio (PDF)</a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="panel" role="tabpanel" id="panel-about" aria-labelledby="tab-about" tabindex="0">
+
+  <div class="wrap hero">
+    <p class="eyebrow">About me</p>
+    <h1 class="hero__title">Practical, technical, and <em>curious about how it fits together</em>.</h1>
+  </div>
+
+  <div class="wrap section" style="padding-top:0">
+    <div class="about__top">
+      <div class="portrait reveal">
+        <img src="assets/img/portrait.jpg" width="1100" height="1467" loading="lazy" alt="Portrait photograph of Brian Fleuren.">
+      </div>
+      <div class="about__body reveal">
+        <p class="lede">
+          I am a third-year Building Engineering student with a practical, technical streak. I have
+          been building and designing things since I was young; that has grown into making variant
+          studies, building-physics calculations and BIM models in Revit.
+        </p>
+        <p>
+          I combine an eye for detail and self-discipline with strong communication skills, picked up
+          as a closing manager in hospitality, where I run staff and day-to-day operations on my own.
+          What interests me most is the moment a design has to survive contact with reality: the
+          span direction that changes which walls carry load, the duct run that has to be in the plan
+          before it is a problem, the detail that decides whether a facade actually works.
+        </p>
+        <p>
+          I am currently looking for a practical work placement in the Nijmegen / Wijchen region
+          where I can put that technical knowledge to work.
+        </p>
+
+        <div class="block">
+          <h3>Software &amp; tools</h3>
+          <p style="font-size:.9rem;color:var(--ink-3);margin-bottom:1.4rem">
+            Open one to see what I actually use it for, and what it taught me.
+          </p>
+
+          <ul class="skills">
+            <li class="skill">
+              <button class="skill__toggle" type="button" id="sk-revit-btn" aria-expanded="false" aria-controls="sk-revit">
+                <svg class="skill__icon" aria-hidden="true" focusable="false"><use href="#i-revit"/></svg>
+                <span class="skill__name">Revit</span>
+                <span class="skill__sum">BIM modelling, schedules &amp; parameters</span>
+                <span class="skill__mark" aria-hidden="true"></span>
+              </button>
+              <div class="skill__panel" id="sk-revit" role="region" aria-labelledby="sk-revit-btn">
+                <div class="skill__panel__in">
+                  <p>
+                    My main tool, and the one I have put the most hours into. What I have learned is
+                    that a model is only as useful as the discipline behind it: consistent naming,
+                    parameters that genuinely carry information, and schedules that read straight out
+                    of the model instead of being retyped next to it.
+                  </p>
+                  <p>
+                    For the Cube House I built everything from a single model — plan, four elevations,
+                    section, 3D view and roof plan — and laid them out on one A1 sheet, so a change to
+                    the model updates every view at once. On the asylum seekers' centre I took the
+                    modelling over from a teammate, and our model came out more complete and more
+                    detailed than most of the other groups'. I have also built my own integration to
+                    automate repetitive modelling work, because the quickest way to understand a tool
+                    is to take it apart.
+                  </p>
+                  <p class="skill__where"><b>Used in</b> All three projects</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="skill">
+              <button class="skill__toggle" type="button" id="sk-cad-btn" aria-expanded="false" aria-controls="sk-cad">
+                <svg class="skill__icon" aria-hidden="true" focusable="false"><use href="#i-cad"/></svg>
+                <span class="skill__name">CAD drawing packages</span>
+                <span class="skill__sum">2D construction drawing and detailing</span>
+                <span class="skill__mark" aria-hidden="true"></span>
+              </button>
+              <div class="skill__panel" id="sk-cad" role="region" aria-labelledby="sk-cad-btn">
+                <div class="skill__panel__in">
+                  <p>
+                    Where Revit gives you the whole building, a 2D package is where one detail gets
+                    resolved. I drew my roof-edge detail at 1:5 as a production-ready sheet: every
+                    layer hatched, dimensions on the build-up, leaders naming each material, and a
+                    title block recording the scale, the date and who drew it.
+                  </p>
+                  <p>
+                    The lesson was that the skill is not the software, it is the conventions. Line
+                    weights, hatching and annotation exist so that someone can read the drawing
+                    correctly without you standing next to them explaining it.
+                  </p>
+                  <p class="skill__where"><b>Used in</b> Rijnstate / Berghege</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="skill">
+              <button class="skill__toggle" type="button" id="sk-excel-btn" aria-expanded="false" aria-controls="sk-excel">
+                <svg class="skill__icon" aria-hidden="true" focusable="false"><use href="#i-excel"/></svg>
+                <span class="skill__name">Excel</span>
+                <span class="skill__sum">Calculations, schedules &amp; budgets</span>
+                <span class="skill__mark" aria-hidden="true"></span>
+              </button>
+              <div class="skill__panel" id="sk-excel" role="region" aria-labelledby="sk-excel-btn">
+                <div class="skill__panel__in">
+                  <p>
+                    The most useful thing I made on site was a spreadsheet. The operating-theatre
+                    walls had to stay electrically isolated while services were being drilled through
+                    them constantly, so I set up a weekly measurement schedule — one row per wall, one
+                    column per check — which made it immediately visible which walls were still sound
+                    and exactly when one stopped being sound.
+                  </p>
+                  <p>
+                    I have also worked with a cost structure split across labour, materials,
+                    subcontracting, plant and overheads, comparing budget against committed cost and
+                    forecast, and with a criteria table for weighing construction variants against
+                    each other. What I took from all of it: a good sheet answers a question, a bad one
+                    just stores numbers.
+                  </p>
+                  <p class="skill__where"><b>Used in</b> Rijnstate / Berghege · Cube House</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="skill">
+              <button class="skill__toggle" type="button" id="sk-ps-btn" aria-expanded="false" aria-controls="sk-ps">
+                <svg class="skill__icon" aria-hidden="true" focusable="false"><use href="#i-ps"/></svg>
+                <span class="skill__name">Photoshop</span>
+                <span class="skill__sum">Compositing photography onto drawings</span>
+                <span class="skill__mark" aria-hidden="true"></span>
+              </button>
+              <div class="skill__panel" id="sk-ps" role="region" aria-labelledby="sk-ps-btn">
+                <div class="skill__panel__in">
+                  <p>
+                    I used it to put a drawing and the real site into the same frame: I took the A0
+                    construction-site layout drawing for the hospital project and composited my own
+                    site photographs onto the positions they were taken from, so the plan and what it
+                    actually looked like can be read together.
+                  </p>
+                  <p>
+                    Working at that size taught me layer discipline, masking and resolution — and that
+                    a file which gets away from you becomes unusable no matter how good the image is.
+                  </p>
+                  <p class="skill__where"><b>Used in</b> Rijnstate / Berghege</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="skill">
+              <button class="skill__toggle" type="button" id="sk-ai-btn" aria-expanded="false" aria-controls="sk-ai">
+                <svg class="skill__icon" aria-hidden="true" focusable="false"><use href="#i-ai"/></svg>
+                <span class="skill__name">Illustrator</span>
+                <span class="skill__sum">Vector diagrams and project graphics</span>
+                <span class="skill__mark" aria-hidden="true"></span>
+              </button>
+              <div class="skill__panel" id="sk-ai" role="region" aria-labelledby="sk-ai-btn">
+                <div class="skill__panel__in">
+                  <p>
+                    I use Illustrator for the graphic side of presenting a project: diagrams, phasing
+                    drawings and figures that have to stay sharp at any size, and for tidying up
+                    exported linework before it goes into a report.
+                  </p>
+                  <p>
+                    Drawing in vectors rather than pixels forces you to think in shapes and layers
+                    from the start, which is the same habit that makes a CAD drawing readable.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="skill">
+              <button class="skill__toggle" type="button" id="sk-id-btn" aria-expanded="false" aria-controls="sk-id">
+                <svg class="skill__icon" aria-hidden="true" focusable="false"><use href="#i-id"/></svg>
+                <span class="skill__name">InDesign</span>
+                <span class="skill__sum">Multi-page reports and portfolios</span>
+                <span class="skill__mark" aria-hidden="true"></span>
+              </button>
+              <div class="skill__panel" id="sk-id" role="region" aria-labelledby="sk-id-btn">
+                <div class="skill__panel__in">
+                  <p>
+                    For documents that run to many pages — setting up a grid, master pages and
+                    paragraph styles so a long report or portfolio stays consistent throughout,
+                    instead of being laid out page by page and drifting as it goes.
+                  </p>
+                  <p>
+                    It is the same principle as a BIM model or a drawing set: define the system once,
+                    then let every page inherit it.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="btnrow">
+          <a class="btn" href="assets/docs/CV-Brian-Fleuren.pdf" download="CV-Brian-Fleuren.pdf">Download CV (PDF)</a>
+          <a class="btn btn--ghost" href="#contact" data-goto="contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap section">
+    <div class="section__head reveal">
+      <p class="eyebrow">Expertise</p>
+      <h2 class="section__title">What I can already do</h2>
+    </div>
+    <ul class="chips reveal">
+      <li>BIM modelling &amp; parametric work in Revit</li>
+      <li>Variant studies of building methods (system build, timber frame)</li>
+      <li>Floor types and foundation variants</li>
+      <li>Building-physics calculations (daylight, solar load)</li>
+      <li>Sustainability analysis of facade constructions</li>
+      <li>Materials science</li>
+    </ul>
+  </div>
+
+  <div class="wrap section">
+    <div class="section__head reveal">
+      <p class="eyebrow">Education</p>
+      <h2 class="section__title">Where I learned it</h2>
+    </div>
+    <div class="entries reveal">
+      <div class="entry">
+        <div class="entry__when">08/2024 — 04/2028</div>
+        <div>
+          <h3 class="entry__role">BSc Building Engineering</h3>
+          <p class="entry__org">Avans University of Applied Sciences, 's-Hertogenbosch</p>
+          <div class="entry__body">Building methods, materials science and BIM modelling. Currently in the third year.</div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry__when">Completed</div>
+        <div>
+          <h3 class="entry__role">HAVO — Economics &amp; Society</h3>
+          <p class="entry__org">Maaswaal College, Wijchen</p>
+          <div class="entry__body">Graduated with an average of 7.5.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap section">
+    <div class="section__head reveal">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section__title">Work &amp; responsibility</h2>
+    </div>
+    <div class="entries reveal">
+      <div class="entry">
+        <div class="entry__when">Jan 2023 — present</div>
+        <div>
+          <h3 class="entry__role">Closing manager</h3>
+          <p class="entry__org">Restaurant De Tyd</p>
+          <div class="entry__body">
+            <ul>
+              <li>Independently responsible for closing the restaurant and running the floor staff during evening shifts</li>
+              <li>Keeping an eye on staffing costs and matching the rota to expected demand</li>
+              <li>Receiving and advising guests on drinks and menu choices, and resolving problems on the spot</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry__when">Feb — May 2023</div>
+        <div>
+          <h3 class="entry__role">Intern</h3>
+          <p class="entry__org">Nokavision Software B.V., 's-Hertogenbosch</p>
+          <div class="entry__body">
+            <ul>
+              <li>Shadowed experienced colleagues and advised clients</li>
+              <li>Maintained contact with internal and external relations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry__when">Jan 2019 — Jan 2023</div>
+        <div>
+          <h3 class="entry__role">Sales assistant</h3>
+          <p class="entry__org">Albert Heijn</p>
+          <div class="entry__body">
+            <ul>
+              <li>Handled transactions and processed complaints</li>
+              <li>Kept the shop floor tidy and professional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap section">
+    <div class="section__head reveal">
+      <p class="eyebrow">Outside the studio</p>
+      <h2 class="section__title">Coaching Jong Dames 3</h2>
+      <p class="section__sub">MHC Wijchen — field hockey, second class</p>
+    </div>
+    <div class="cols reveal">
+      <div>
+        <p>
+          I plan the season and run the weekly training sessions for a squad of 14 to 16 players, and
+          I coordinate sponsorship for the team's kit. It is the same skill as running a project team,
+          just with more mud: decide what matters, make it clear who does what, and keep everyone moving.
+        </p>
+      </div>
+      <div class="factgrid">
+        <div class="fact">
+          <h4>Languages</h4>
+          <ul>
+            <li>Dutch <span>— native</span></li>
+            <li>English <span>— advanced</span></li>
+            <li>Spanish <span>— elementary</span></li>
+          </ul>
+        </div>
+        <div class="fact">
+          <h4>Certificates</h4>
+          <ul><li>VCA-Vol <span>— safety</span></li></ul>
+          <h4 style="margin-top:1.6rem">Interests</h4>
+          <ul><li>Construction &amp; engineering</li><li>Design</li><li>Cooking</li><li>Sport</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="panel" role="tabpanel" id="panel-contact" aria-labelledby="tab-contact" tabindex="0">
+
+  <div class="wrap hero">
+    <p class="eyebrow">Contact</p>
+    <h1 class="hero__title">Let's talk about <em>a placement or a project</em>.</h1>
+  </div>
+
+  <div class="wrap section" style="padding-top:0">
+    <div class="contact__grid">
+      <div class="reveal">
+        <div class="availability">
+          <h3>Currently looking for</h3>
+          <p>
+            A practical work placement in the Nijmegen / Wijchen region where I can put my technical
+            knowledge into practice — ideally somewhere that lets me work on design development,
+            detailing and BIM.
+          </p>
+        </div>
+
+        <ul class="contact__list">
+          <li>
+            <a href="mailto:Fleurenbrian@gmail.com">
+              <span class="contact__label">Email</span>
+              <span class="contact__value">Fleurenbrian@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+31640520793">
+              <span class="contact__label">Phone</span>
+              <span class="contact__value">+31 6 40 52 07 93</span>
+            </a>
+          </li>
+          <li>
+            <div class="row">
+              <span class="contact__label">Based in</span>
+              <span class="contact__value">Wijchen, the Netherlands</span>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <span class="contact__label">Studying</span>
+              <span class="contact__value">Avans University of Applied Sciences, 's-Hertogenbosch</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="btnrow">
+          <a class="btn" href="mailto:Fleurenbrian@gmail.com">Send me an email</a>
+          <a class="btn btn--ghost" href="assets/docs/CV-Brian-Fleuren.pdf" download="CV-Brian-Fleuren.pdf">Download CV (PDF)</a>
+          <a class="btn btn--ghost" href="assets/docs/Portfolio-Brian-Fleuren.pdf" download>Download portfolio (PDF)</a>
+        </div>
+      </div>
+
+      <div class="badge-wrap reveal">
+        <p class="badge-wrap__label">LinkedIn</p>
+
+        <!-- ===============================================================
+             LinkedIn profile badge.
+             Replace data-vanity (and the href below it) with the last part
+             of your own profile URL. For linkedin.com/in/brian-fleuren-123ab
+             the vanity is: brian-fleuren-123ab
+             =============================================================== -->
+        <div class="badge-base LI-profile-badge"
+             data-locale="en_US"
+             data-size="medium"
+             data-theme="light"
+             data-type="VERTICAL"
+             data-vanity="brian-fleuren"
+             data-version="v1">
+          <a class="badge-base__link LI-simple-link"
+             href="https://www.linkedin.com/in/brian-fleuren?trk=profile-badge">Brian Fleuren</a>
+        </div>
+
+        <p class="badge-wrap__fallback">
+          Badge not loading? Open the profile
+          <a href="https://www.linkedin.com/in/brian-fleuren" target="_blank" rel="noopener">directly on LinkedIn</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="year">2026</span> Brian Fleuren</span>
+  <span>Building Engineering · Avans Hogeschool</span>
+  <span><a href="mailto:Fleurenbrian@gmail.com">Fleurenbrian@gmail.com</a></span>
+</footer>
+
+<!-- lightbox for the drawings -->
+<div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Enlarged drawing">
+  <button class="lightbox__close" type="button" aria-label="Close">&times;</button>
+  <img src="" alt="">
+  <p class="lightbox__cap"></p>
+</div>
+
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
