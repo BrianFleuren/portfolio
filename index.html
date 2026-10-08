@@ -128,6 +128,7 @@
         </p>
         <div class="btnrow">
           <a class="btn" href="#about" data-goto="about">More about me</a>
+          <a class="btn btn--ghost" href="#plan" data-goto="contact" data-scroll="plan">Schedule a call</a>
           <a class="btn btn--ghost" href="assets/docs/CV-Brian-Fleuren.pdf" download="CV-Brian-Fleuren.pdf">Download CV (PDF)</a>
         </div>
       </div>
@@ -1164,6 +1165,7 @@
             knowledge into practice — ideally somewhere that lets me work on design development,
             detailing and BIM.
           </p>
+          <a class="btn availability__cta" href="#plan" data-goto="contact" data-scroll="plan">Schedule a call</a>
         </div>
 
         <ul class="contact__list">
@@ -1227,6 +1229,45 @@
       </div>
     </div>
   </div>
+
+  <!-- ===============================================================
+       Calendly-afsprakenplanner.
+       Vervang data-calendly door je eigen Calendly-link, bijvoorbeeld
+       https://calendly.com/brianfleuren/kennismaking
+       Zolang de link niet is ingevuld toont de sectie een melding
+       met e-mail als alternatief.
+       =============================================================== -->
+  <section class="wrap section schedule" id="plan">
+    <div class="section__head section__head--num reveal">
+      <span class="section__num" aria-hidden="true">01</span>
+      <div class="section__head__body">
+        <p class="eyebrow">Schedule a call</p>
+        <h2 class="section__title">Pick a time that suits you</h2>
+        <p class="section__sub">
+          A short introductory call about a placement or a project. Choose a slot below and you will
+          get a confirmation by email straight away.
+        </p>
+      </div>
+    </div>
+
+    <div class="schedule__frame reveal" data-calendly="https://calendly.com/fleurenbrian/30min">
+      <div class="schedule__mount"></div>
+      <div class="schedule__state schedule__state--loading" aria-live="polite">
+        <p>Loading the calendar…</p>
+      </div>
+      <div class="schedule__state schedule__state--off">
+        <p class="schedule__state-title">The calendar is not available right now.</p>
+        <p>Send me an email instead and I will suggest a time.</p>
+        <a class="btn" href="mailto:Fleurenbrian@gmail.com">Send me an email</a>
+      </div>
+    </div>
+
+    <p class="schedule__fallback">
+      Calendar not showing?
+      <a class="schedule__direct" href="https://calendly.com/fleurenbrian/30min" target="_blank" rel="noopener">Open the scheduling page</a>
+      in a new tab.
+    </p>
+  </section>
 </section>
 
 </main>

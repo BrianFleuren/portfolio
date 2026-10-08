@@ -472,7 +472,20 @@
     "Studying": "Opleiding",
     "Send me an email": "Stuur me een e-mail",
     "Badge not loading? Open the profile": "Badge laadt niet? Open het profiel",
-    "directly on LinkedIn": "direct op LinkedIn"
+    "directly on LinkedIn": "direct op LinkedIn",
+
+    /* --- afsprakenplanner (Calendly) --- */
+    "Schedule a call": "Plan een gesprek",
+    "Pick a time that suits you": "Kies een moment dat jou uitkomt",
+    "A short introductory call about a placement or a project. Choose a slot below and you will get a confirmation by email straight away.":
+      "Een korte kennismaking over een stage of een project. Kies hieronder een tijdslot en je krijgt direct een bevestiging per e-mail.",
+    "Loading the calendar…": "Agenda laden…",
+    "The calendar is not available right now.": "De agenda is op dit moment niet beschikbaar.",
+    "Send me an email instead and I will suggest a time.":
+      "Stuur me in plaats daarvan een e-mail, dan stel ik een moment voor.",
+    "Calendar not showing?": "Zie je de agenda niet?",
+    "Open the scheduling page": "Open de planningspagina",
+    "in a new tab.": "in een nieuw tabblad."
   };
 
   /* ---------- attributen (alt-teksten, aria-labels) ---------- */

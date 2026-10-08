@@ -44,6 +44,20 @@
     // Panels start hidden, so anything inside was never measured. Re-run
     // the reveal pass for the panel that just became visible.
     revealPass();
+
+    // The scheduler lives on the contact panel; only fetch Calendly once
+    // someone actually goes there.
+    if (tab.dataset.route === "contact") loadCalendly();
+  }
+
+  // Bring an in-panel section into view after a tab switch, e.g. the
+  // "schedule a call" buttons that land on the scheduler.
+  function scrollToSection(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    window.setTimeout(function () {
+      el.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+    }, 60);
   }
 
   function tabByRoute(route) {
@@ -72,7 +86,10 @@
     var link = e.target.closest("[data-goto]");
     if (!link) return;
     var target = tabByRoute(link.dataset.goto);
-    if (target) { e.preventDefault(); activate(target); }
+    if (!target) return;
+    e.preventDefault();
+    activate(target);
+    if (link.dataset.scroll) scrollToSection(link.dataset.scroll);
   });
 
   window.addEventListener("popstate", function () {
@@ -188,6 +205,74 @@
   });
 
   /* ---------------------------------------------------------------
+     Calendly scheduler
+     The scheduling link lives in one place: data-calendly on the frame.
+     Calendly's script and iframe are only fetched the first time the
+     contact tab opens, so the rest of the site never waits on them.
+     --------------------------------------------------------------- */
+
+  var calendlyStarted = false;
+
+  function loadCalendly() {
+    if (calendlyStarted) return;
+    var frame = document.querySelector("[data-calendly]");
+    if (!frame) return;
+    calendlyStarted = true;
+
+    var url = (frame.getAttribute("data-calendly") || "").trim();
+    var direct = document.querySelector(".schedule__direct");
+
+    function setState(state) {
+      frame.classList.remove("is-loading", "is-loaded", "is-off");
+      frame.classList.add("is-" + state);
+    }
+
+    // Placeholder still in place: show the email alternative instead of
+    // pointing visitors at a Calendly page that does not exist. (When the
+    // link is real but the embed fails, the direct link below stays.)
+    if (!/^https:\/\/calendly\.com\/[^/\s]+/.test(url) || /JOUW-CALENDLY/i.test(url)) {
+      setState("off");
+      if (direct) direct.closest(".schedule__fallback").hidden = true;
+      return;
+    }
+
+    if (direct) direct.href = url;
+    setState("loading");
+
+    // Brand colours apply on paid Calendly plans and are ignored otherwise.
+    var themed = url + (url.indexOf("?") === -1 ? "?" : "&") +
+      "background_color=f8f8f9&text_color=1c1f20&primary_color=416180";
+
+    var widget = document.createElement("div");
+    widget.className = "calendly-inline-widget";
+    widget.setAttribute("data-url", themed);
+    widget.setAttribute("data-resize", "true");
+    frame.querySelector(".schedule__mount").appendChild(widget);
+
+    // Calendly's iframe announces itself with postMessage events; the
+    // first one means the calendar is on screen.
+    window.addEventListener("message", function onMessage(e) {
+      if (!/calendly\.com$/.test((e.origin || "").replace(/^https?:\/\//, "").split(":")[0])) return;
+      if (e.data && typeof e.data.event === "string" && e.data.event.indexOf("calendly.") === 0) {
+        setState("loaded");
+        window.removeEventListener("message", onMessage);
+      }
+    });
+
+    var script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    script.onerror = function () { setState("off"); };
+    document.body.appendChild(script);
+
+    // Blocked by an extension, offline, or Calendly down: fall back
+    // rather than leaving a spinner up for ever.
+    window.setTimeout(function () {
+      if (frame.classList.contains("is-loading")) setState("off");
+    }, 15000);
+  }
+
+  /* ---------------------------------------------------------------
      LinkedIn badge
      The wrapper reserves the iframe's footprint so the column does not
      jump when LinkedIn's async script lands. If it never lands — blocked,
@@ -206,8 +291,12 @@
      Boot
      --------------------------------------------------------------- */
 
-  var initial = tabByRoute(window.location.hash.replace("#", "")) || tabs[0];
+  // #plan is a deep link straight to the scheduler on the contact tab,
+  // so it can be shared on its own (e.g. in an email signature).
+  var route = window.location.hash.replace("#", "");
+  var initial = tabByRoute(route === "plan" ? "contact" : route) || tabs[0];
   activate(initial, { silent: true });
+  if (route === "plan") scrollToSection("plan");
 
   document.getElementById("year").textContent = new Date().getFullYear();
 })();

@@ -57,6 +57,19 @@ localStorage.setItem('bf-lang-debug', '1')
 
 Herlaad de pagina; de console toont dan elke zin zonder Nederlandse vertaling. Eigennamen, getallen en woorden die in beide talen gelijk zijn (Contact, Team, Revit) staan daar bewust in.
 
+### Afsprakenplanner (Calendly)
+
+Onder **Contact → Plan een gesprek** staat een Calendly-agenda waarin bezoekers zelf een gesprek inplannen. De link staat op één plek in `index.html`, in het attribuut `data-calendly` (en de reservelink `schedule__direct` eronder):
+
+```
+https://calendly.com/fleurenbrian/30min
+```
+
+- Calendly wordt pas geladen als iemand de Contact-pagina opent, zodat de rest van de site er niet trager van wordt.
+- Laadt de agenda niet (adblocker, storing), dan verschijnt een link naar de planningspagina en een e-mailalternatief.
+- `https://brianfleuren.com/#plan` springt direct naar de planner — handig voor in een e-mailhandtekening.
+- Beschikbaarheid, duur en naam van het gesprek stel je in bij Calendly zelf; de site neemt dat automatisch over.
+
 ### Lokaal bekijken
 
 Vanuit deze map:
